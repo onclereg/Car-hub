@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <div className='bg-white grid md:grid-cols-2 items-center h-[80vh] w-full gap-2 text-gray-800'>
+    <div className='bg-white  max-w-7xl mx-auto grid md:grid-cols-2 items-center h-[80vh] w-full gap-2 text-gray-800'>
         <div className='flex flex-col gap-3 items-start justify-center p-3 md:p-10'>
             <p className='text-2xl sm:text-4xl font-extrabold font-mono'>
                 FIND ,BOOK OR RENT A CAR ---<br/>As quickly as possible!!.

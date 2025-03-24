@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import { Button } from './ui/button'
 import { carProps } from '@/app/page'
 import ViewMore from './viewMore'
 import { generateCarImageUrl } from '@/utils'
@@ -14,7 +13,7 @@ const Card = ({car}:carCardProps) => {
     const {drive,fuel_type,make,model,transmission} = car
 
   return (
-    <div className='m-4 p-4 grid gap-2 bg-gray-200 text-sm text-gray-900 rounded-lg'>
+    <div className='m-4 md:w-[700px] md:h-[400px] mx-auto p-4 grid gap-2 bg-gray-200 text-sm text-gray-900 rounded-lg'>
         <p className='text-xl font-bold font-serif'>{make}-{model}</p>
         <p>
             <span className='text-lg text-blue-950'>52</span>/day

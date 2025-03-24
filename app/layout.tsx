@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cat Hub",
+  title: "Car Hub",
   description: "Car listing app.",
 };
 

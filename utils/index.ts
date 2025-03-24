@@ -4,19 +4,20 @@
 import { carProps } from "@/app/page";
 import { FilterProps } from "@/constants";
 
-export async function fetchCars(filters: FilterProps){
-  const { manufacturer, year, fuel } = filters;
+
+export async function fetchCars(filters: FilterProps): Promise<any>{
+  const { model, year, fuel, name } = filters;
   
-    const headers = {
-        'x-rapidapi-key': '1b51c60173msh4aed56a3c8dae7ap10c890jsnbe8a7f06738d',
-		    'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
+  const headers = {
+      'x-rapidapi-key': '1b51c60173msh4aed56a3c8dae7ap10c890jsnbe8a7f06738d',
+      'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
+  }
+  const response = await fetch(
+      `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${model}&name=${name}&year=${year}&fuel_type=${fuel}`,
+    {
+      headers: headers
     }
-    const response = await fetch(
-         `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&year=${year}&fuel_type=${fuel}`,
-		 {
-            headers: headers
-         }
-    )
+  )
 	const result= await response.json();
 	return result;
 }
@@ -34,32 +35,6 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   const rentalRatePerDay = basePricePerDay + mileageRate + ageRate;
 
   return rentalRatePerDay.toFixed(0);
-};
-
-export const updateSearchParams = (type: string, value: string) => {
-  // Get the current URL search params
-  const searchParams = new URLSearchParams(window.location.search);
-
-  // Set the specified search parameter to the given value
-  searchParams.set(type, value);
-
-  // Set the specified search parameter to the given value
-  const newPathname = `${window.location.pathname}?${searchParams.toString()}`;
-
-  return newPathname;
-};
-
-export const deleteSearchParams = (type: string) => {
-  // Set the specified search parameter to the given value
-  const newSearchParams = new URLSearchParams(window.location.search);
-
-  // Delete the specified search parameter
-  newSearchParams.delete(type.toLocaleLowerCase());
-
-  // Construct the updated URL pathname with the deleted search parameter
-  const newPathname = `${window.location.pathname}?${newSearchParams.toString()}`;
-
-  return newPathname;
 };
 
 export const generateCarImageUrl = (car: carProps, angle?: string) => {
