@@ -41,7 +41,7 @@ const SearchComponent = () => {
 
   useEffect(() => {    
     fetchData();
-  }, [model,name,year,fuel]);
+  }, [fetchData,model,name,year,fuel]);
 
   const searchHandler = async () => {
     fetchData()

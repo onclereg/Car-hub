@@ -8,14 +8,14 @@ const Featured = () => {
         </h1>
 
         <p>
-             A **Car Hub** is a premier platform designed to cater to car lovers, buyers, sellers, and           automotive    professionals in one seamless ecosystem. Whether you’re in the market for a new ride, looking to sell your current vehicle, or simply staying updated on automotive trends, Car Hub is the ultimate resource.
+             A Car Hub is a premier platform designed to cater to car lovers, buyers, sellers, and           automotive    professionals in one seamless ecosystem. Whether you’re in the market for a new ride, looking to sell your current vehicle, or simply staying updated on automotive trends, Car Hub is the ultimate resource.
         </p>
 
         <h1 className='text-2xl font-bold font-mono text-blue-700'>Featured Highlights of Car Hub**</h1>
 
         <p>
             <span className='text-xl font-bold font-mono text-blue-700'>
-                1. Comprehensive Car Listings & Marketplace**
+                1. Comprehensive Car Listings & Marketplace
             </span><br/>
             Car Hub offers a vast marketplace featuring a diverse selection of vehicles from private sellers and dealerships. Users can explore detailed specifications, high-resolution images, and verified seller profiles, ensuring a smooth and transparent buying experience.
         </p>
@@ -55,15 +55,15 @@ const Featured = () => {
         </p>
 
         <p>
-            <span className='text-xl font-bold font-mono text-blue-700'>Why Choose Car Hub?**</span><br/>
-            - **All-in-One Platform**: Your ultimate destination for everything automotive.<br/>
-            - **Trust & Transparency**: Verified listings and expert-backed insights.<br/>
-            - **Active Community**: Engage with fellow car enthusiasts and industry experts.<br/>
-            - **Personalized Experience**: Tailored recommendations based on preferences and interests.<br/>
+            <span className='text-xl font-bold font-mono text-blue-700'>Why Choose Car Hub?</span><br/>
+            - All-in-One Platform: Your ultimate destination for everything automotive.<br/>
+            - Trust & Transparency: Verified listings and expert-backed insights.<br/>
+            - Active Community: Engage with fellow car enthusiasts and industry experts.<br/>
+            - Personalized Experience: Tailored recommendations based on preferences and interests.<br/>
         </p>
 
         <p className='text-2xl font-bold font-mono text-blue-700'> 
-            Whether you're a car buyer, seller, or passionate enthusiast, **Car Hub** is your gateway to a smarter and more engaging automotive experience!
+            Whether you're a car buyer, seller, or passionate enthusiast, Car Hub is your gateway to a smarter and more engaging automotive experience!
         </p>
 
 

@@ -8,7 +8,7 @@ const Blog = () => {
         </h1>
 
         <p>
-            Welcome to the **Car Hub Blog**, where car enthusiasts, buyers, and industry professionals come together to explore the latest trends, expert reviews, and insider tips from the automotive world. Whether you're a passionate car collector, a first-time buyer, or a tech-savvy auto lover, our blog delivers engaging content tailored just for you.
+            Welcome to the Car Hub Blog, where car enthusiasts, buyers, and industry professionals come together to explore the latest trends, expert reviews, and insider tips from the automotive world. Whether you're a passionate car collector, a first-time buyer, or a tech-savvy auto lover, our blog delivers engaging content tailored just for you.
         </p>
 
         <h1 className='text-2xl font-bold font-mono text-blue-700'>
@@ -42,10 +42,10 @@ const Blog = () => {
 
         <p>
             <span className='text-xl font-bold font-mono text-blue-700'>Why Follow the Car Hub Blog?</span><br/>
-            - **Expert Insights**: Trusted advice from automotive professionals.<br/>
-            - **Engaging Content**: Fresh articles, updates, and exclusive interviews.<br/>
-            - **Community Interaction**: Share your thoughts and experiences with fellow car lovers.<br/>
-            - **Personalized Recommendations**: Tailored content to match your interests and needs.<br/>
+            - Expert Insights: Trusted advice from automotive professionals.<br/>
+            - Engaging Content: Fresh articles, updates, and exclusive interviews.<br/>
+            - Community Interaction: Share your thoughts and experiences with fellow car lovers.<br/>
+            - Personalized Recommendations: Tailored content to match your interests and needs.<br/>
         </p>
 
     </div>
