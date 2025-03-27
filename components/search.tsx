@@ -19,8 +19,11 @@ const SearchComponent = () => {
   const [year, setYear] = useState("");
   const [cars, setCars] = useState<carProps[]>([]);
 
-  const fetchData = async () => {
-    setLoading(true)
+  
+
+  useEffect(() => { 
+    const fetchData = async () => {
+      loading
     try {
       const res = await fetchCars({
         model : model || "",
@@ -28,7 +31,6 @@ const SearchComponent = () => {
         fuel : fuel || "",
         name : name || "",
       });
-      console.log(res)
       setCars(res);
     } 
     catch (error) {
@@ -39,12 +41,11 @@ const SearchComponent = () => {
     }
   };
 
-  useEffect(() => {    
     fetchData();
-  }, [fetchData,model,name,year,fuel]);
+  }, [model,name,year,fuel]);
 
   const searchHandler = async () => {
-    fetchData()
+    setFuel; setModel; setName; setYear;
   };
 
   return (

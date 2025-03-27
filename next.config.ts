@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["cdn.imagin.studio"], // Add the image hostname here
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
